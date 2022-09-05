@@ -12,8 +12,6 @@ LANGUAGE plpgsql;
 
 --------------------------------------------------------------
 
-ALTER TABLE customer ADD COLUMN email varchar(90);
-
 CREATE OR REPLACE FUNCTION customer(_customer_id INTEGER, _first_name VARCHAR, _last_name VARCHAR, _email VARCHAR)
 RETURNS void 
 AS $MAIN$
